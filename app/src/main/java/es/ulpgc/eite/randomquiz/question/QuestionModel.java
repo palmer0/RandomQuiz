@@ -136,16 +136,6 @@ public class QuestionModel implements QuestionContract.Model {
   }
 
   @Override
-  public boolean isLastQuestion() {
-    if(quizIndex == quizQuestions.length-1){
-      return true;
-    }
-
-    return false;
-
-  }
-
-  @Override
   public void incrQuizIndex() {
     quizIndex++;
   }
@@ -176,6 +166,18 @@ public class QuestionModel implements QuestionContract.Model {
 
   }
   */
+
+
+  @Override
+  public boolean isLastQuestion() {
+    if(quizIndex == quizQuestions.length-1){
+      return true;
+    }
+
+    return false;
+
+  }
+
 
   @Override
   public String getCorrectLabel() {
