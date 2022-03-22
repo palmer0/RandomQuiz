@@ -132,7 +132,6 @@ public class QuestionPresenter implements QuestionContract.Presenter {
     view.get().displayQuestionData(state);
   }
 
-
   private void passDataToCheatScreen(QuestionToCheatState state) {
     mediator.setQuestionToCheatState(state);
   }
